@@ -49,6 +49,34 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.stat-card').forEach(card => counterObserver.observe(card));
 
+// ─── Claude banner typing animation ────────────────────────────────────────
+(function () {
+  const el = document.getElementById('claude-typed');
+  if (!el) return;
+  const text = '4 minutes and 37 seconds';
+  let i = 0;
+
+  function typeNext() {
+    if (i < text.length) {
+      el.textContent = text.slice(0, ++i);
+      setTimeout(typeNext, 55 + Math.random() * 45);
+    } else {
+      el.classList.add('is-done');
+    }
+  }
+
+  const bannerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        bannerObserver.unobserve(entry.target);
+        setTimeout(typeNext, 400);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  bannerObserver.observe(el.closest('.claude-banner'));
+})();
+
 // ─── Smooth scroll for anchor links ────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {

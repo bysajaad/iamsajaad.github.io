@@ -663,6 +663,93 @@ img { max-width: 100%; display: block; }
   color: var(--color-muted);
 }
 
+/* ─── Claude Banner ──────────────────────────────────────────────────────── */
+.claude-banner {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: clamp(80px, 14vw, 160px) var(--pad-x);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.claude-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(108, 99, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.claude-banner__inner {
+  position: relative;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.claude-banner__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+.claude-banner__headline {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 7vw, 6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+.claude-banner__hl {
+  color: var(--color-accent);
+  position: relative;
+  display: inline-block;
+}
+.claude-banner__typed {
+  min-width: 2ch;
+  border-right: 3px solid var(--color-accent);
+  padding-right: 4px;
+  animation: cursorBlink 0.75s step-end infinite;
+}
+.claude-banner__typed.is-done {
+  border-right-color: transparent;
+  animation: none;
+}
+@keyframes cursorBlink {
+  0%, 100% { border-right-color: var(--color-accent); }
+  50%       { border-right-color: transparent; }
+}
+.claude-banner__body {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--color-muted);
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+}
+.claude-banner__body strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+.claude-banner__keyword {
+  color: var(--color-accent-alt);
+  font-weight: 600;
+}
+.claude-banner__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  padding: 10px 22px;
+  border-radius: 100px;
+}
+
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .about__inner {
