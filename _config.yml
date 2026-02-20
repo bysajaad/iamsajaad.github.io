@@ -1,0 +1,27 @@
+title: Sajad Roudbari
+description: Head of Product Design & Strategy — 15 years turning complexity into clarity.
+url: "https://iamsajaad.github.io"
+baseurl: ""
+
+author:
+  name: Sajad Roudbari
+  email: sajad.rudbari@gmail.com
+  phone: "+98 990 404 0122"
+  linkedin: "https://linkedin.com/in/iamsajaad"
+  dribbble: "https://dribbble.com/bysajaad"
+  behance: "https://behance.net/bysajaad"
+  medium: "https://medium.com/@bysajaad"
+  virgool: "https://virgool.io/@bysajaad"
+
+theme: ~
+plugins:
+  - jekyll-seo-tag
+
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - "*.gemspec"
+  - vendor/
