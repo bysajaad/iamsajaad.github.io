@@ -1,8 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-{% include head.html %}
-<body>
-  {{ content }}
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-</body>
+    {% include head.html %}
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-TDPBG7RQ"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {{ content }}
+        <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    </body>
 </html>
