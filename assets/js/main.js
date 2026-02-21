@@ -1,3 +1,60 @@
+// ─── Custom cursor ──────────────────────────────────────────────────────────
+(function () {
+  // Skip on touch-only devices
+  if (window.matchMedia('(hover: none)').matches) return;
+
+  // Inject cursor elements
+  const dot  = document.createElement('div');
+  const ring = document.createElement('div');
+  dot.className  = 'cursor-dot';
+  ring.className = 'cursor-ring';
+  document.body.appendChild(dot);
+  document.body.appendChild(ring);
+
+  // Current mouse position
+  let mouseX = -100, mouseY = -100;
+  // Ring position (lerped)
+  let ringX  = -100, ringY  = -100;
+
+  // Track mouse
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    // Dot snaps instantly
+    dot.style.transform = `translate(calc(${mouseX}px - 50%), calc(${mouseY}px - 50%))`;
+  });
+
+  // Smooth ring via rAF lerp
+  const LERP = 0.12;
+  (function loop() {
+    ringX += (mouseX - ringX) * LERP;
+    ringY += (mouseY - ringY) * LERP;
+    ring.style.transform = `translate(calc(${ringX}px - 50%), calc(${ringY}px - 50%))`;
+    requestAnimationFrame(loop);
+  })();
+
+  // Hover state on interactive elements
+  const interactiveSelector = 'a, button, [role="button"], input, label, select, textarea, [tabindex]';
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.closest(interactiveSelector)) {
+      document.body.classList.add('cursor-hover');
+    }
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (e.target.closest(interactiveSelector)) {
+      document.body.classList.remove('cursor-hover');
+    }
+  });
+
+  // Click burst
+  document.addEventListener('mousedown', () => {
+    document.body.classList.add('cursor-click');
+  });
+  document.addEventListener('mouseup', () => {
+    document.body.classList.remove('cursor-click');
+  });
+})();
+
 // ─── Nav scroll fade ───────────────────────────────────────────────────────
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
