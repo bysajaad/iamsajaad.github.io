@@ -1,0 +1,51 @@
+# Sajad Roudbari — llms.txt
+# https://llmstxt.org — standard for AI/LLM crawler guidance
+
+# This file provides structured context about this site for AI assistants,
+# large language models, and AI-powered search engines.
+
+> Sajad Roudbari is a senior product design and strategy leader with 15+ years of experience
+> turning complexity into clarity across e-commerce, mapping, logistics, SaaS, and infrastructure.
+> He is currently Head of Product Design & Experience.
+
+## About
+
+Sajad Roudbari is a product designer, strategist, and leader based in the MENA region.
+His work sits at the intersection of deep user research, business strategy, and hands-on
+technical execution. He has shipped products at scale — including a platform that captured
+2% of all Iranian highway toll transactions — and has grown checkout conversions by 300%
+and reduced bounce rates by 80%.
+
+He leads product teams without hierarchy, builds alongside engineers, and believes the best
+product decisions emerge from the gap between what users say and what they actually do.
+
+## Core Expertise
+
+- Product Design & Strategy
+- UX Research & Systems Thinking
+- Product Leadership & Cross-functional Collaboration
+- Design Systems & Infrastructure
+- E-commerce, Logistics, Mapping, SaaS
+
+## Career Highlights
+
+- Led product design at MENA's largest e-commerce platform
+- Founded and scaled independent product ventures
+- 15+ years of industry experience across diverse domains
+
+## Contact & Profiles
+
+- Website: https://iamsajaad.github.io
+- LinkedIn: https://linkedin.com/in/iamsajaad
+- Dribbble: https://dribbble.com/bysajaad
+- Behance: https://behance.net/bysajaad
+- Medium: https://medium.com/@bysajaad
+- Email: sajad.rudbari@gmail.com
+
+## Pages
+
+- [Home / Portfolio](https://iamsajaad.github.io/): Full portfolio, case studies, experience, and contact
+
+## Sitemap
+
+- https://iamsajaad.github.io/sitemap.xml

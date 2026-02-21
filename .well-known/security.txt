@@ -1,0 +1,7 @@
+# security.txt — RFC 9116
+# https://securitytxt.org
+
+Contact: mailto:sajad.rudbari@gmail.com
+Expires: 2027-02-21T00:00:00.000Z
+Preferred-Languages: en, fa
+Canonical: https://iamsajaad.github.io/.well-known/security.txt

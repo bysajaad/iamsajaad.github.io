@@ -1,0 +1,98 @@
+# robots.txt for https://iamsajaad.github.io
+# Sajad Roudbari — Personal Portfolio
+
+# ───────────────────────────────────────────
+# General crawlers (SEO)
+# ───────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+Disallow: /_layouts/
+Disallow: /_includes/
+
+# Sitemap
+Sitemap: https://iamsajaad.github.io/sitemap.xml
+
+# ───────────────────────────────────────────
+# AI / LLM crawlers — explicitly allowed
+# Allow indexing for AI-powered search & discovery
+# ───────────────────────────────────────────
+
+# OpenAI (ChatGPT, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — ChatGPT Browse
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Google Gemini / Bard
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Apple (Siri, Spotlight AI)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (used to train many LLMs)
+User-agent: CCBot
+Allow: /
+
+# Diffbot (knowledge graph)
+User-agent: Diffbot
+Allow: /
+
+# Bytedance / TikTok AI
+User-agent: Bytespider
+Allow: /
+
+# Amazon Alexa
+User-agent: ia_archiver
+Allow: /
+
+# ───────────────────────────────────────────
+# AI image / content scrapers — blocked
+# ───────────────────────────────────────────
+
+# Stable Diffusion LAION dataset crawler
+User-agent: DataForSeoBot
+Disallow: /
+
+# Scrapers with no legitimate AI search use
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

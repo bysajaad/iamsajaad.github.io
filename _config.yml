@@ -13,6 +13,18 @@ author:
   medium: "https://medium.com/@bysajaad"
   virgool: "https://virgool.io/@bysajaad"
 
+# SEO — jekyll-seo-tag enrichment
+tagline: "Head of Product Design & Strategy"
+lang: en
+
+social:
+  name: Sajad Roudbari
+  links:
+    - https://linkedin.com/in/iamsajaad
+    - https://dribbble.com/bysajaad
+    - https://behance.net/bysajaad
+    - https://medium.com/@bysajaad
+
 theme: ~
 plugins:
   - jekyll-seo-tag
