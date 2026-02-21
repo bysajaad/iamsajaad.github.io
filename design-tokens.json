@@ -1,0 +1,640 @@
+{
+  "$metadata": {
+    "tokenSetOrder": ["core", "semantic", "typography", "component"]
+  },
+
+  "core": {
+    "color": {
+      "purple": {
+        "050": { "value": "#f0efff", "type": "color" },
+        "100": { "value": "#e0deff", "type": "color" },
+        "200": { "value": "#c1bcff", "type": "color" },
+        "300": { "value": "#9f96ff", "type": "color" },
+        "400": { "value": "#8178ff", "type": "color" },
+        "500": { "value": "#6c63ff", "type": "color", "$description": "Primary accent — CSS --color-accent" },
+        "600": { "value": "#5248e0", "type": "color" },
+        "700": { "value": "#3d34b8", "type": "color" },
+        "800": { "value": "#2b2490", "type": "color" },
+        "900": { "value": "#1c1768", "type": "color" }
+      },
+      "coral": {
+        "400": { "value": "#ff8f8f", "type": "color" },
+        "500": { "value": "#ff6b6b", "type": "color", "$description": "Accent alt — CSS --color-accent-alt" },
+        "600": { "value": "#e05555", "type": "color" }
+      },
+      "dark": {
+        "bg":      { "value": "#0a0a0f", "type": "color", "$description": "Page background — CSS --color-bg" },
+        "surface": { "value": "#111118", "type": "color", "$description": "Card/section surface — CSS --color-surface" },
+        "border":  { "value": "#1e1e2e", "type": "color", "$description": "Borders/dividers — CSS --color-border" }
+      },
+      "neutral": {
+        "text":  { "value": "#e8e8f0", "type": "color", "$description": "Primary text — CSS --color-text" },
+        "muted": { "value": "#6b6b80", "type": "color", "$description": "Secondary/muted text — CSS --color-muted" },
+        "white": { "value": "#ffffff", "type": "color" }
+      }
+    },
+
+    "font-family": {
+      "heading": { "value": "Space Grotesk", "type": "fontFamilies", "$description": "CSS --font-head" },
+      "body":    { "value": "Inter",         "type": "fontFamilies", "$description": "CSS --font-body" },
+      "mono":    { "value": "JetBrains Mono","type": "fontFamilies", "$description": "CSS --font-mono" }
+    },
+
+    "font-weight": {
+      "light":     { "value": "300", "type": "fontWeights" },
+      "regular":   { "value": "400", "type": "fontWeights" },
+      "medium":    { "value": "500", "type": "fontWeights" },
+      "semibold":  { "value": "600", "type": "fontWeights" },
+      "bold":      { "value": "700", "type": "fontWeights" },
+      "extrabold": { "value": "800", "type": "fontWeights" }
+    },
+
+    "font-size": {
+      "2xs":  { "value": "10", "type": "fontSizes" },
+      "xs":   { "value": "11", "type": "fontSizes" },
+      "sm":   { "value": "12", "type": "fontSizes" },
+      "md":   { "value": "14", "type": "fontSizes" },
+      "base": { "value": "16", "type": "fontSizes" },
+      "lg":   { "value": "17", "type": "fontSizes" },
+      "xl":   { "value": "18", "type": "fontSizes" },
+      "2xl":  { "value": "22", "type": "fontSizes" },
+      "3xl":  { "value": "24", "type": "fontSizes" },
+      "4xl":  { "value": "29", "type": "fontSizes" },
+      "5xl":  { "value": "38", "type": "fontSizes" },
+      "6xl":  { "value": "51", "type": "fontSizes" },
+      "7xl":  { "value": "64", "type": "fontSizes" },
+      "8xl":  { "value": "80", "type": "fontSizes" },
+      "9xl":  { "value": "96", "type": "fontSizes" },
+      "hero": { "value": "176","type": "fontSizes", "$description": "Max hero name size at large viewports" }
+    },
+
+    "line-height": {
+      "tight":    { "value": "1.1", "type": "lineHeights" },
+      "snug":     { "value": "1.2", "type": "lineHeights" },
+      "normal":   { "value": "1.4", "type": "lineHeights" },
+      "relaxed":  { "value": "1.6", "type": "lineHeights" },
+      "loose":    { "value": "1.7", "type": "lineHeights" },
+      "spacious":  { "value": "1.8","type": "lineHeights" }
+    },
+
+    "letter-spacing": {
+      "tighter": { "value": "-0.03em", "type": "letterSpacing" },
+      "normal":  { "value": "0em",     "type": "letterSpacing" },
+      "wide":    { "value": "0.05em",  "type": "letterSpacing" },
+      "wider":   { "value": "0.08em",  "type": "letterSpacing" },
+      "widest":  { "value": "0.1em",   "type": "letterSpacing" },
+      "label":   { "value": "0.18em",  "type": "letterSpacing", "$description": "Eyebrow / section-label caps tracking" },
+      "banner":  { "value": "0.2em",   "type": "letterSpacing" }
+    },
+
+    "border-radius": {
+      "none": { "value": "0",    "type": "borderRadius" },
+      "sm":   { "value": "4",    "type": "borderRadius" },
+      "md":   { "value": "8",    "type": "borderRadius" },
+      "lg":   { "value": "14",   "type": "borderRadius" },
+      "xl":   { "value": "16",   "type": "borderRadius" },
+      "2xl":  { "value": "18",   "type": "borderRadius" },
+      "3xl":  { "value": "20",   "type": "borderRadius" },
+      "4xl":  { "value": "24",   "type": "borderRadius" },
+      "pill": { "value": "9999", "type": "borderRadius" }
+    },
+
+    "border-width": {
+      "hairline": { "value": "1",   "type": "borderWidth" },
+      "thin":     { "value": "1.5", "type": "borderWidth" },
+      "medium":   { "value": "2",   "type": "borderWidth" },
+      "thick":    { "value": "3",   "type": "borderWidth" }
+    },
+
+    "spacing": {
+      "0":  { "value": "0",   "type": "spacing" },
+      "1":  { "value": "4",   "type": "spacing" },
+      "2":  { "value": "6",   "type": "spacing" },
+      "3":  { "value": "8",   "type": "spacing" },
+      "4":  { "value": "10",  "type": "spacing" },
+      "5":  { "value": "12",  "type": "spacing" },
+      "6":  { "value": "14",  "type": "spacing" },
+      "7":  { "value": "16",  "type": "spacing" },
+      "8":  { "value": "18",  "type": "spacing" },
+      "9":  { "value": "20",  "type": "spacing" },
+      "10": { "value": "22",  "type": "spacing" },
+      "11": { "value": "24",  "type": "spacing" },
+      "12": { "value": "28",  "type": "spacing" },
+      "13": { "value": "32",  "type": "spacing" },
+      "14": { "value": "36",  "type": "spacing" },
+      "15": { "value": "40",  "type": "spacing" },
+      "16": { "value": "48",  "type": "spacing" },
+      "17": { "value": "56",  "type": "spacing" },
+      "18": { "value": "64",  "type": "spacing" },
+      "19": { "value": "72",  "type": "spacing" },
+      "20": { "value": "80",  "type": "spacing" },
+      "21": { "value": "96",  "type": "spacing" },
+      "22": { "value": "112", "type": "spacing" },
+      "23": { "value": "120", "type": "spacing" },
+      "24": { "value": "140", "type": "spacing" },
+      "25": { "value": "160", "type": "spacing" }
+    },
+
+    "opacity": {
+      "watermark": { "value": "0.06", "type": "opacity" },
+      "subtle":    { "value": "0.12", "type": "opacity" },
+      "faint":     { "value": "0.3",  "type": "opacity" },
+      "dim":       { "value": "0.35", "type": "opacity" },
+      "half":      { "value": "0.5",  "type": "opacity" },
+      "ring":      { "value": "0.55", "type": "opacity" },
+      "muted-el":  { "value": "0.7",  "type": "opacity" },
+      "high":      { "value": "0.8",  "type": "opacity" },
+      "near-full": { "value": "0.85", "type": "opacity" },
+      "full":      { "value": "1",    "type": "opacity" }
+    },
+
+    "motion": {
+      "duration": {
+        "instant": { "value": "100",  "type": "other", "$description": "ms" },
+        "fast":    { "value": "200",  "type": "other" },
+        "normal":  { "value": "300",  "type": "other" },
+        "slow":    { "value": "400",  "type": "other" },
+        "reveal":  { "value": "700",  "type": "other", "$description": "Scroll-reveal elements" },
+        "counter": { "value": "1500", "type": "other", "$description": "Impact counter animation" },
+        "mesh":    { "value": "12000","type": "other", "$description": "Hero mesh pulse cycle" }
+      },
+      "easing": {
+        "default":   { "value": "ease",                          "type": "other" },
+        "out-quart": { "value": "cubic-bezier(0.25, 1, 0.5, 1)", "type": "other" }
+      },
+      "delay": {
+        "hero-1": { "value": "100",  "type": "other", "$description": "Hero eyebrow" },
+        "hero-2": { "value": "300",  "type": "other", "$description": "Hero name line 1" },
+        "hero-3": { "value": "500",  "type": "other", "$description": "Hero name line 2" },
+        "hero-4": { "value": "700",  "type": "other", "$description": "Hero job title" },
+        "hero-5": { "value": "900",  "type": "other", "$description": "Hero tagline" },
+        "hero-6": { "value": "1100", "type": "other", "$description": "Hero CTA" }
+      }
+    }
+  },
+
+  "semantic": {
+    "color": {
+      "bg":               { "value": "{core.color.dark.bg}",      "type": "color", "$description": "Page background" },
+      "surface":          { "value": "{core.color.dark.surface}",  "type": "color", "$description": "Elevated surfaces, cards" },
+      "border":           { "value": "{core.color.dark.border}",   "type": "color", "$description": "Lines, dividers" },
+      "accent":           { "value": "{core.color.purple.500}",    "type": "color", "$description": "Primary interactive colour" },
+      "accent-hover":     { "value": "{core.color.purple.600}",    "type": "color" },
+      "accent-alt":       { "value": "{core.color.coral.500}",     "type": "color", "$description": "Cursor hover, keywords" },
+      "text":             { "value": "{core.color.neutral.text}",   "type": "color", "$description": "Body text" },
+      "muted":            { "value": "{core.color.neutral.muted}",  "type": "color", "$description": "Secondary text, hints" },
+      "on-accent":        { "value": "{core.color.neutral.white}",  "type": "color", "$description": "Text on accent backgrounds" },
+      "accent-subtle-bg": { "value": "rgba(108, 99, 255, 0.12)",   "type": "color", "$description": "Tag / badge background" },
+      "accent-glow":      { "value": "rgba(108, 99, 255, 0.08)",   "type": "color", "$description": "Banner gradient glow" },
+      "coral-subtle-bg":  { "value": "rgba(255, 107, 107, 0.06)",  "type": "color" },
+      "nav-bg":           { "value": "rgba(10, 10, 15, 0.8)",      "type": "color", "$description": "Frosted nav background" }
+    },
+
+    "shadow": {
+      "card-hover":  { "value": { "x": "0", "y": "24", "blur": "60", "spread": "0", "color": "rgba(108, 99, 255, 0.18)", "type": "dropShadow" }, "type": "boxShadow" },
+      "cta-hover":   { "value": { "x": "0", "y": "12", "blur": "40", "spread": "0", "color": "rgba(108, 99, 255, 0.4)",  "type": "dropShadow" }, "type": "boxShadow" },
+      "power-hover": { "value": { "x": "0", "y": "20", "blur": "50", "spread": "0", "color": "rgba(108, 99, 255, 0.25)", "type": "dropShadow" }, "type": "boxShadow" },
+      "toy-hover":   { "value": { "x": "0", "y": "16", "blur": "40", "spread": "0", "color": "rgba(108, 99, 255, 0.15)", "type": "dropShadow" }, "type": "boxShadow" }
+    }
+  },
+
+  "typography": {
+    "display": {
+      "hero-name": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.extrabold}",
+          "fontSize":        "{core.font-size.hero}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "{core.letter-spacing.tighter}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(4rem, 12vw, 11rem) — .hero__name"
+      },
+      "banner-headline": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.extrabold}",
+          "fontSize":        "{core.font-size.9xl}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "-0.02em",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(2.4rem, 7vw, 6rem) — .claude-banner__headline"
+      },
+      "section-title": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.extrabold}",
+          "fontSize":        "{core.font-size.6xl}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(2rem, 4vw, 3.2rem) — .section-title"
+      },
+      "contact-heading": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.extrabold}",
+          "fontSize":        "{core.font-size.7xl}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(2.2rem, 5vw, 4rem) — .contact__heading"
+      },
+      "zonerift-name": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.extrabold}",
+          "fontSize":        "{core.font-size.8xl}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(2.5rem, 6vw, 5rem) — .zonerift__name"
+      },
+      "about-quote": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.bold}",
+          "fontSize":        "{core.font-size.5xl}",
+          "lineHeight":      "{core.line-height.snug}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(1.6rem, 3.5vw, 2.8rem) — .about__quote blockquote"
+      }
+    },
+
+    "heading": {
+      "hero-title": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.light}",
+          "fontSize":        "{core.font-size.2xl}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(1rem, 2vw, 1.4rem) — .hero__title"
+      },
+      "hero-tagline": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.3xl}",
+          "lineHeight":      "{core.line-height.normal}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(1.1rem, 2.2vw, 1.6rem) — .hero__tagline"
+      },
+      "exp-role": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.bold}",
+          "fontSize":        "{core.font-size.base}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "1.15rem — .exp-card__role"
+      },
+      "power-card-title": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.bold}",
+          "fontSize":        "{core.font-size.base}",
+          "lineHeight":      "{core.line-height.snug}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.95rem — .power-card__title"
+      },
+      "stat-label": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.semibold}",
+          "fontSize":        "{core.font-size.xl}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "1.1rem — .stat-card__label"
+      }
+    },
+
+    "body": {
+      "large": {
+        "value": {
+          "fontFamily":      "{core.font-family.body}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.lg}",
+          "lineHeight":      "{core.line-height.spacious}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "1.05rem — about body, contact sub, zonerift desc"
+      },
+      "base": {
+        "value": {
+          "fontFamily":      "{core.font-family.body}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.base}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography"
+      },
+      "small": {
+        "value": {
+          "fontFamily":      "{core.font-family.body}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.md}",
+          "lineHeight":      "{core.line-height.normal}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.88rem — exp wins, power desc, stat context"
+      },
+      "banner": {
+        "value": {
+          "fontFamily":      "{core.font-family.body}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.xl}",
+          "lineHeight":      "{core.line-height.loose}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(1rem, 2vw, 1.25rem) — .claude-banner__body"
+      }
+    },
+
+    "label": {
+      "eyebrow": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.sm}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.label}",
+          "paragraphSpacing": "0",
+          "textCase":        "uppercase"
+        },
+        "type": "typography",
+        "$description": "0.78rem — hero eyebrow, section labels, zonerift eyebrow"
+      },
+      "company": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.bold}",
+          "fontSize":        "{core.font-size.sm}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.widest}",
+          "paragraphSpacing": "0",
+          "textCase":        "uppercase"
+        },
+        "type": "typography",
+        "$description": "0.8rem — .exp-card__company"
+      },
+      "period": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.sm}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.75rem — .exp-card__period"
+      },
+      "tag": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.sm}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.wide}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.75rem — .tag"
+      },
+      "toy-name": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.2xs}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.wide}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.7rem — .toy-name"
+      },
+      "footer": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.sm}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.75rem — .footer"
+      }
+    },
+
+    "mono": {
+      "stat-number": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.bold}",
+          "fontSize":        "{core.font-size.9xl}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "clamp(3rem, 6vw, 5.5rem) — .stat-card__number"
+      },
+      "metric-value": {
+        "value": {
+          "fontFamily":      "{core.font-family.mono}",
+          "fontWeight":      "{core.font-weight.bold}",
+          "fontSize":        "{core.font-size.4xl}",
+          "lineHeight":      "{core.line-height.tight}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "1.8rem — .zonerift__metric-value"
+      },
+      "nav-logo": {
+        "value": {
+          "fontFamily":      "{core.font-family.heading}",
+          "fontWeight":      "{core.font-weight.extrabold}",
+          "fontSize":        "{core.font-size.xl}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.wide}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "1.1rem — .nav__logo"
+      },
+      "nav-link": {
+        "value": {
+          "fontFamily":      "{core.font-family.body}",
+          "fontWeight":      "{core.font-weight.regular}",
+          "fontSize":        "{core.font-size.md}",
+          "lineHeight":      "{core.line-height.relaxed}",
+          "letterSpacing":   "{core.letter-spacing.normal}",
+          "paragraphSpacing": "0"
+        },
+        "type": "typography",
+        "$description": "0.9rem — .nav__links a"
+      }
+    }
+  },
+
+  "component": {
+    "layout": {
+      "max-width":       { "value": "1100", "type": "sizing",  "$description": "CSS --max-w" },
+      "section-pad-min": { "value": "80",   "type": "spacing", "$description": "Min of clamp section padding" },
+      "section-pad-max": { "value": "140",  "type": "spacing", "$description": "Max of clamp section padding" },
+      "pad-x-min":       { "value": "20",   "type": "spacing", "$description": "Min horizontal page gutter" },
+      "pad-x-max":       { "value": "60",   "type": "spacing", "$description": "Max horizontal page gutter" }
+    },
+
+    "nav": {
+      "height":              { "value": "56",                              "type": "sizing" },
+      "bg":                  { "value": "{semantic.color.nav-bg}",         "type": "color" },
+      "border-color":        { "value": "{semantic.color.border}",         "type": "color" },
+      "blur":                { "value": "16",                              "type": "other",        "$description": "backdrop-filter blur px" },
+      "link-color":          { "value": "{semantic.color.muted}",          "type": "color" },
+      "link-color-hover":    { "value": "{semantic.color.text}",           "type": "color" },
+      "cta-bg":              { "value": "{semantic.color.accent}",         "type": "color" },
+      "cta-color":           { "value": "{semantic.color.on-accent}",      "type": "color" },
+      "cta-radius":          { "value": "{core.border-radius.pill}",       "type": "borderRadius" },
+      "cta-padding-x":       { "value": "{core.spacing.9}",               "type": "spacing" },
+      "cta-padding-y":       { "value": "{core.spacing.3}",               "type": "spacing" }
+    },
+
+    "button-primary": {
+      "bg":            { "value": "{semantic.color.accent}",        "type": "color" },
+      "bg-hover":      { "value": "{semantic.color.accent-hover}",  "type": "color" },
+      "color":         { "value": "{semantic.color.on-accent}",     "type": "color" },
+      "radius":        { "value": "{core.border-radius.pill}",      "type": "borderRadius" },
+      "padding-x":     { "value": "32",                             "type": "spacing" },
+      "padding-y":     { "value": "14",                             "type": "spacing" },
+      "font-weight":   { "value": "{core.font-weight.semibold}",    "type": "fontWeights" },
+      "font-size":     { "value": "{core.font-size.base}",          "type": "fontSizes" },
+      "shadow-hover":  { "value": "{semantic.shadow.cta-hover}",    "type": "boxShadow" },
+      "lift-hover":    { "value": "-2",                             "type": "other",       "$description": "translateY on hover, px" }
+    },
+
+    "tag": {
+      "bg":        { "value": "{semantic.color.accent-subtle-bg}",  "type": "color" },
+      "border":    { "value": "rgba(108, 99, 255, 0.3)",            "type": "color" },
+      "color":     { "value": "{semantic.color.accent}",            "type": "color" },
+      "radius":    { "value": "{core.border-radius.pill}",          "type": "borderRadius" },
+      "padding-x": { "value": "14",                                 "type": "spacing" },
+      "padding-y": { "value": "6",                                  "type": "spacing" }
+    },
+
+    "card-exp": {
+      "bg":              { "value": "{semantic.color.surface}",      "type": "color" },
+      "border-color":    { "value": "{semantic.color.border}",       "type": "color" },
+      "border-color-hover": { "value": "rgba(108, 99, 255, 0.4)",   "type": "color" },
+      "radius":          { "value": "{core.border-radius.xl}",      "type": "borderRadius" },
+      "padding":         { "value": "36",                            "type": "spacing" },
+      "shadow-hover":    { "value": "{semantic.shadow.card-hover}",  "type": "boxShadow" },
+      "lift-hover":      { "value": "-6",                            "type": "other" }
+    },
+
+    "card-power": {
+      "bg":              { "value": "{semantic.color.bg}",           "type": "color" },
+      "border-color":    { "value": "{semantic.color.border}",       "type": "color" },
+      "border-color-hover": { "value": "rgba(108, 99, 255, 0.5)",   "type": "color" },
+      "radius":          { "value": "{core.border-radius.3xl}",     "type": "borderRadius" },
+      "width":           { "value": "200",                           "type": "sizing" },
+      "padding-x":       { "value": "24",                            "type": "spacing" },
+      "padding-y":       { "value": "32",                            "type": "spacing" },
+      "shadow-hover":    { "value": "{semantic.shadow.power-hover}", "type": "boxShadow" }
+    },
+
+    "card-stat": {
+      "bg":           { "value": "{semantic.color.bg}",      "type": "color" },
+      "bg-hover":     { "value": "{semantic.color.surface}",  "type": "color" },
+      "padding":      { "value": "48",                        "type": "spacing" },
+      "number-color": { "value": "{semantic.color.accent}",   "type": "color" }
+    },
+
+    "card-zonerift": {
+      "bg":       { "value": "{semantic.color.surface}",  "type": "color" },
+      "border":   { "value": "{semantic.color.border}",   "type": "color" },
+      "radius":   { "value": "{core.border-radius.4xl}",  "type": "borderRadius" },
+      "padding":  { "value": "72",                         "type": "spacing" }
+    },
+
+    "toy-item": {
+      "bg":              { "value": "{semantic.color.surface}",    "type": "color" },
+      "radius":          { "value": "18",                          "type": "borderRadius" },
+      "padding-x":       { "value": "28",                          "type": "spacing" },
+      "padding-y":       { "value": "24",                          "type": "spacing" },
+      "min-width":       { "value": "110",                         "type": "sizing" },
+      "logo-wrap-size":  { "value": "56",                          "type": "sizing" },
+      "logo-wrap-radius":{ "value": "14",                          "type": "borderRadius" },
+      "logo-size":       { "value": "36",                          "type": "sizing" },
+      "shadow-hover":    { "value": "{semantic.shadow.toy-hover}", "type": "boxShadow" }
+    },
+
+    "contact-link": {
+      "color":       { "value": "{semantic.color.text}",    "type": "color" },
+      "color-hover": { "value": "{semantic.color.accent}",  "type": "color" },
+      "padding-y":   { "value": "18",                       "type": "spacing" },
+      "border":      { "value": "{semantic.color.border}",  "type": "color" },
+      "shift-hover": { "value": "6",                        "type": "other",  "$description": "translateX px on hover" }
+    },
+
+    "about-quote": {
+      "border-width": { "value": "{core.border-width.thick}",  "type": "borderWidth" },
+      "border-color": { "value": "{semantic.color.accent}",    "type": "color" },
+      "padding-left": { "value": "24",                         "type": "spacing" }
+    },
+
+    "cursor": {
+      "dot-size":         { "value": "8",                             "type": "sizing" },
+      "dot-size-hover":   { "value": "5",                             "type": "sizing" },
+      "dot-size-click":   { "value": "12",                            "type": "sizing" },
+      "ring-size":        { "value": "36",                            "type": "sizing" },
+      "ring-size-hover":  { "value": "52",                            "type": "sizing" },
+      "ring-size-click":  { "value": "24",                            "type": "sizing" },
+      "dot-color":        { "value": "{semantic.color.accent}",       "type": "color" },
+      "dot-color-hover":  { "value": "{semantic.color.accent-alt}",   "type": "color" },
+      "dot-color-click":  { "value": "{semantic.color.on-accent}",    "type": "color" },
+      "ring-border":      { "value": "{core.border-width.thin}",      "type": "borderWidth" },
+      "ring-opacity":     { "value": "{core.opacity.ring}",           "type": "opacity" },
+      "lerp-factor":      { "value": "0.12",                          "type": "other",  "$description": "Ring follow speed (0–1)" }
+    }
+  }
+}
