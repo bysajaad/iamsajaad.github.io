@@ -1,23 +1,25 @@
 // ─── Custom cursor ──────────────────────────────────────────────────────────
 (function () {
   // Skip on touch-only devices
-  if (window.matchMedia('(hover: none)').matches) return;
+  if (window.matchMedia("(hover: none)").matches) return;
 
   // Inject cursor elements
-  const dot  = document.createElement('div');
-  const ring = document.createElement('div');
-  dot.className  = 'cursor-dot';
-  ring.className = 'cursor-ring';
+  const dot = document.createElement("div");
+  const ring = document.createElement("div");
+  dot.className = "cursor-dot";
+  ring.className = "cursor-ring";
   document.body.appendChild(dot);
   document.body.appendChild(ring);
 
   // Current mouse position
-  let mouseX = -100, mouseY = -100;
+  let mouseX = -100,
+    mouseY = -100;
   // Ring position (lerped)
-  let ringX  = -100, ringY  = -100;
+  let ringX = -100,
+    ringY = -100;
 
   // Track mouse
-  document.addEventListener('mousemove', (e) => {
+  document.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
     // Dot snaps instantly
@@ -34,44 +36,72 @@
   })();
 
   // Hover state on interactive elements
-  const interactiveSelector = 'a, button, [role="button"], input, label, select, textarea, [tabindex]';
-  document.addEventListener('mouseover', (e) => {
+  const interactiveSelector =
+    'a, button, [role="button"], input, label, select, textarea, [tabindex]';
+  document.addEventListener("mouseover", (e) => {
     if (e.target.closest(interactiveSelector)) {
-      document.body.classList.add('cursor-hover');
+      document.body.classList.add("cursor-hover");
     }
   });
-  document.addEventListener('mouseout', (e) => {
+  document.addEventListener("mouseout", (e) => {
     if (e.target.closest(interactiveSelector)) {
-      document.body.classList.remove('cursor-hover');
+      document.body.classList.remove("cursor-hover");
     }
   });
 
   // Click burst
-  document.addEventListener('mousedown', () => {
-    document.body.classList.add('cursor-click');
+  document.addEventListener("mousedown", () => {
+    document.body.classList.add("cursor-click");
   });
-  document.addEventListener('mouseup', () => {
-    document.body.classList.remove('cursor-click');
+  document.addEventListener("mouseup", () => {
+    document.body.classList.remove("cursor-click");
+  });
+
+  // Hide custom cursor when mouse leaves the viewport
+  document.addEventListener("mouseleave", () => {
+    dot.style.opacity = "0";
+    ring.style.opacity = "0";
+  });
+
+  // Snap both elements to re-entry position, then reveal
+  document.addEventListener("mouseenter", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    ringX = e.clientX;
+    ringY = e.clientY;
+    dot.style.transform = `translate(calc(${mouseX}px - 50%), calc(${mouseY}px - 50%))`;
+    ring.style.transform = `translate(calc(${ringX}px - 50%), calc(${ringY}px - 50%))`;
+    dot.style.opacity = "";
+    ring.style.opacity = "";
   });
 })();
 
 // ─── Nav scroll fade ───────────────────────────────────────────────────────
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('nav--visible', window.scrollY > 80);
-}, { passive: true });
+const nav = document.getElementById("nav");
+window.addEventListener(
+  "scroll",
+  () => {
+    nav.classList.toggle("nav--visible", window.scrollY > 80);
+  },
+  { passive: true },
+);
 
 // ─── Scroll reveal ─────────────────────────────────────────────────────────
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.15 });
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 },
+);
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+document
+  .querySelectorAll(".reveal")
+  .forEach((el) => revealObserver.observe(el));
 
 // ─── Counter animation ─────────────────────────────────────────────────────
 function easeOutQuart(t) {
@@ -80,7 +110,7 @@ function easeOutQuart(t) {
 
 function countUp(card) {
   const target = parseInt(card.dataset.target, 10);
-  const counterEl = card.querySelector('.counter');
+  const counterEl = card.querySelector(".counter");
   const duration = 1500;
   const start = performance.now();
 
@@ -95,22 +125,27 @@ function countUp(card) {
   requestAnimationFrame(step);
 }
 
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      countUp(entry.target);
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
+const counterObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        countUp(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.5 },
+);
 
-document.querySelectorAll('.stat-card').forEach(card => counterObserver.observe(card));
+document
+  .querySelectorAll(".stat-card")
+  .forEach((card) => counterObserver.observe(card));
 
 // ─── Claude banner typing animation ────────────────────────────────────────
 (function () {
-  const el = document.getElementById('claude-typed');
+  const el = document.getElementById("claude-typed");
   if (!el) return;
-  const text = '4 minutes and 37 seconds';
+  const text = "4 minutes and 37 seconds";
   let i = 0;
 
   function typeNext() {
@@ -118,29 +153,32 @@ document.querySelectorAll('.stat-card').forEach(card => counterObserver.observe(
       el.textContent = text.slice(0, ++i);
       setTimeout(typeNext, 55 + Math.random() * 45);
     } else {
-      el.classList.add('is-done');
+      el.classList.add("is-done");
     }
   }
 
-  const bannerObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        bannerObserver.unobserve(entry.target);
-        setTimeout(typeNext, 400);
-      }
-    });
-  }, { threshold: 0.3 });
+  const bannerObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          bannerObserver.unobserve(entry.target);
+          setTimeout(typeNext, 400);
+        }
+      });
+    },
+    { threshold: 0.3 },
+  );
 
-  bannerObserver.observe(el.closest('.claude-banner'));
+  bannerObserver.observe(el.closest(".claude-banner"));
 })();
 
 // ─── Smooth scroll for anchor links ────────────────────────────────────────
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
-    const target = document.querySelector(anchor.getAttribute('href'));
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", (e) => {
+    const target = document.querySelector(anchor.getAttribute("href"));
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
+      target.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
