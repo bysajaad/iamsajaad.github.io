@@ -21,7 +21,12 @@ product decisions emerge from the gap between what users say and what they actua
 
 ## Core Expertise
 
-- Product Design & Strategy
+- Product Design & Experience
+- AI Infrastructures
+- Agentic Products
+- Openclaw
+- N8N
+- Data Infrustructures
 - UX Research & Systems Thinking
 - Product Leadership & Cross-functional Collaboration
 - Design Systems & Infrastructure
