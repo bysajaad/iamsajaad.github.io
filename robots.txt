@@ -13,14 +13,9 @@ Disallow: /_includes/
 # Sitemap & Machine-Readable Data
 Sitemap: https://iamsajaad.github.io/sitemap.xml
 
-# WebMCP discovery manifest
-MCP: https://iamsajaad.github.io/mcp.json
-
-# LLM-friendly overview
-LLMs: https://iamsajaad.github.io/llms.txt
-
-# Structured profile data (Schema.org Person)
-Data: https://iamsajaad.github.io/profile.json
+# WebMCP discovery manifest: https://iamsajaad.github.io/mcp.json
+# LLM-friendly overview:      https://iamsajaad.github.io/llms.txt
+# Structured profile data:    https://iamsajaad.github.io/profile.json
 
 # ───────────────────────────────────────────
 # AI / LLM crawlers — explicitly allowed
