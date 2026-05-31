@@ -6,7 +6,7 @@
 
 > Sajad Roudbari is a senior product design and strategy leader with 15+ years of experience
 > turning complexity into clarity across e-commerce, mapping, logistics, SaaS, and infrastructure.
-> He is currently Head of Product Design & Experience.
+> He is currently Head of Product Design & Experience at Digikala Jet.
 
 ## About
 
@@ -19,38 +19,106 @@ and reduced bounce rates by 80%.
 He leads product teams without hierarchy, builds alongside engineers, and believes the best
 product decisions emerge from the gap between what users say and what they actually do.
 
+Philosophy: "I don't design interfaces. I design decisions."
+
 ## Core Expertise
 
 - Product Design & Experience
-- AI Infrastructures
-- Agentic Products
-- Openclaw
-- N8N
-- Data Infrustructures
+- Product Strategy & Leadership
 - UX Research & Systems Thinking
-- Product Leadership & Cross-functional Collaboration
-- Design Systems & Infrastructure
+- AI Infrastructures & Agentic Products
+- Data Infrastructure & Analytics
+- Design Systems & Design-Engineering Collaboration
 - E-commerce, Logistics, Mapping, SaaS
+- N8N workflow automation
+- Zero-authority cross-functional leadership
+- Conversion Rate Optimization
+- Field research & ethnographic study
 
 ## Career Highlights
 
-- Led product design at MENA's largest e-commerce platform
-- Founded and scaled independent product ventures
-- 15+ years of industry experience across diverse domains
+### Digikala Jet (2023 — Present) · Head of Product Design
+MENA's largest e-commerce — Quick Commerce Division
+- Scaled business 10x; built analytics infrastructure from zero
+- 300% checkout conversion growth via funnel optimization
+- 80% bounce rate reduction through UX restructuring
+- Built AI/ML sentiment pipeline processing 100,000+ call recordings
+
+### Balad Maps (2020 — 2022) · Senior Product Designer & PM
+Hezardastan Group (Cafebazaar & Divar) · 4M+ DAU
+- Launched toll payment feature — captured 2% of all Iranian highway transactions
+- 80% pedestrian bounce reduction via voice navigation
+- Transformed 18-engineer team dynamics; halved ship time
+
+### Zonerift (2022 — Present) · Founder & Product Lead
+Self-funded SaaS · Global (Iran, Russia, Eastern Europe)
+- 810% ROI on a 0-to-1 idea cycle
+- 3,000+ users, 1.5PB monthly traffic
+- Zero-maintenance architecture; built full stack (network, encryption, payments, infra)
+
+### Bamilo (2018 — 2019) · Senior UX Designer
+Rocket Internet · International E-commerce
+- 300% checkout conversion via 5→3 step funnel optimization
+- 27% overall conversion uplift with dual CTA strategy
+- Led full marketplace redesign in multilingual environment
+
+### Asanbar (2019 — 2020) · Lead Product Designer
+B2B Logistics Marketplace
+- 2x driver acceptance via in-cab UX field research
+- Dynamic return-trip pricing algorithm design
+- Contributed to successful Series A (IRR 8B)
+
+### Yara / Medrick (2016 — 2018) · UX Lead
+Gaming & Ad-Tech Platform · Dubai, UAE
+- Shipped Ario gaming platform (Steam competitor) in 12 months
+- Delivered Tapeligh ad-tech platform on aggressive timeline
+- Led in English-primary international environment
+
+## Impact Metrics
+
+- 810% ROI — Zonerift 0-to-1 PMF cycle
+- 300% checkout conversion growth — e-commerce funnel optimization
+- 80% bounce rate reduction — UX restructuring
+- 10x business growth — product-led expansion at Digikala Jet
+- 2% market share — Iranian highway toll transactions captured (Balad Maps)
+- 2x driver acceptance — in-cab UX field research (Asanbar)
+- 1.5PB monthly traffic — zero-maintenance infrastructure (Zonerift)
+- 3,000+ global users — Iran, Russia, Eastern Europe
+
+## Superpowers
+
+1. UX → Revenue — Every design decision connects to a business metric. No decoration, only conversion.
+2. Zero-Authority Leadership — Aligns engineers, designers, and executives without the org chart.
+3. Technical Depth — Works directly in infra, analytics, and AI/ML. Doesn't just hand off specs.
+4. Field Research — Goes to truck stops, toll booths, and street corners. Real insights, not assumed ones.
+5. Product Strategy — From 0-to-1 to scale. Roadmaps that survive contact with reality.
+
+## Current Tools
+
+n8n, Claude Code, Figma, Zed, Cursor, OpenRouter, Docker, TimescaleDB,
+Redis, Rust, Jekyll, Metabase, DBeaver, Ghostty, Linear, Kafka
+
+## Availability
+
+Available for senior product leadership roles, consulting engagements, and advisory positions.
 
 ## Contact & Profiles
 
 - Website: https://iamsajaad.github.io
 - LinkedIn: https://linkedin.com/in/iamsajaad
+- Telegram: https://t.me/bysajaad
 - Dribbble: https://dribbble.com/bysajaad
 - Behance: https://behance.net/bysajaad
 - Medium: https://medium.com/@bysajaad
+- Virgool: https://virgool.io/@bysajaad
 - Email: sajad.rudbari@gmail.com
+
+## Machine-Readable Data
+
+- Profile JSON (Schema.org): https://iamsajaad.github.io/profile.json
+- WebMCP Manifest: https://iamsajaad.github.io/mcp.json
+- Sitemap: https://iamsajaad.github.io/sitemap.xml
 
 ## Pages
 
-- [Home / Portfolio](https://iamsajaad.github.io/): Full portfolio, case studies, experience, and contact
-
-## Sitemap
-
-- https://iamsajaad.github.io/sitemap.xml
+- [Home / Portfolio](https://iamsajaad.github.io/): Full portfolio with case studies, experience, metrics, tools, and contact

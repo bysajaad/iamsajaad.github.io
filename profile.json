@@ -1,0 +1,187 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sajad Roudbari",
+  "alternateName": ["bysajaad", "iamsajaad"],
+  "jobTitle": "Head of Product Design & Experience",
+  "description": "Senior product design and strategy leader with 15+ years of experience turning complexity into clarity across e-commerce, mapping, logistics, SaaS, and AI infrastructure.",
+  "url": "https://iamsajaad.github.io",
+  "email": "sajad.rudbari@gmail.com",
+  "telephone": "+98 990 404 0122",
+  "image": "https://iamsajaad.github.io/assets/favicon.svg",
+  "sameAs": [
+    "https://linkedin.com/in/iamsajaad",
+    "https://dribbble.com/bysajaad",
+    "https://behance.net/bysajaad",
+    "https://medium.com/@bysajaad",
+    "https://virgool.io/@bysajaad",
+    "https://t.me/bysajaad"
+  ],
+  "knowsAbout": [
+    "Product Design",
+    "Product Strategy",
+    "UX Research",
+    "Design Systems",
+    "AI Infrastructure",
+    "Agentic Products",
+    "Data Infrastructure",
+    "E-commerce",
+    "Logistics",
+    "Mapping",
+    "SaaS",
+    "Product Leadership",
+    "Analytics Infrastructure",
+    "N8N",
+    "Zero-authority Leadership",
+    "Field Research",
+    "Conversion Rate Optimization"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Digikala Jet",
+    "description": "MENA's largest e-commerce — Quick Commerce Division",
+    "url": "https://digikala.com"
+  },
+  "hasOccupation": [
+    {
+      "@type": "Role",
+      "roleName": "Head of Product Design",
+      "startDate": "2023",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Digikala Jet",
+        "description": "MENA's largest e-commerce — Quick Commerce Division"
+      },
+      "description": "Scaled business 10x, built analytics infrastructure from zero, 300% checkout conversion, 80% bounce reduction, AI/ML sentiment pipeline processing 100K+ call recordings."
+    },
+    {
+      "@type": "Role",
+      "roleName": "Senior Product Designer & PM",
+      "startDate": "2020",
+      "endDate": "2022",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Balad Maps",
+        "description": "Hezardastan Group (Cafebazaar & Divar) · 4M+ DAU mapping platform"
+      },
+      "description": "Launched toll payment capturing 2% of all Iranian highway transactions. 80% pedestrian bounce reduction via voice navigation. Transformed 18-engineer team, halved ship time."
+    },
+    {
+      "@type": "Role",
+      "roleName": "Founder & Product Lead",
+      "startDate": "2022",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Zonerift",
+        "description": "Self-funded SaaS · Global"
+      },
+      "description": "810% ROI, 3,000+ users across Iran, Russia, Eastern Europe. 1.5PB monthly traffic, zero-maintenance architecture. Full stack: network, encryption, payments, infra."
+    },
+    {
+      "@type": "Role",
+      "roleName": "Senior UX Designer",
+      "startDate": "2018",
+      "endDate": "2019",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Bamilo",
+        "description": "Rocket Internet · International E-commerce"
+      },
+      "description": "300% checkout conversion via 5→3 step optimization. 27% overall conversion uplift with dual CTA strategy. Led full marketplace redesign in multilingual environment."
+    },
+    {
+      "@type": "Role",
+      "roleName": "Lead Product Designer",
+      "startDate": "2019",
+      "endDate": "2020",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Asanbar",
+        "description": "B2B Logistics Marketplace"
+      },
+      "description": "2x driver acceptance via in-cab UX field research. Dynamic return-trip pricing algorithm design. Contributed to successful Series A (IRR 8B)."
+    },
+    {
+      "@type": "Role",
+      "roleName": "UX Lead",
+      "startDate": "2016",
+      "endDate": "2018",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Yara / Medrick",
+        "description": "Gaming & Ad-Tech Platform · Dubai, UAE"
+      },
+      "description": "Shipped Ario gaming platform (Steam competitor) in 12 months. Delivered Tapeligh ad-tech platform on aggressive timeline. Led in English-primary international environment."
+    }
+  ],
+  "impact": [
+    {
+      "metric": "ROI Delivered",
+      "value": "810%",
+      "context": "On a 0 to 1 idea to PMF cycle",
+      "company": "Zonerift"
+    },
+    {
+      "metric": "Checkout Conversion Growth",
+      "value": "300%",
+      "context": "E-commerce funnel optimization",
+      "company": "Digikala Jet / Bamilo"
+    },
+    {
+      "metric": "Bounce Rate Reduction",
+      "value": "80%",
+      "context": "Through UX restructuring",
+      "company": "Digikala Jet"
+    },
+    {
+      "metric": "Business Growth",
+      "value": "10x",
+      "context": "Product-led expansion",
+      "company": "Digikala Jet"
+    },
+    {
+      "metric": "Highway Toll Market Share",
+      "value": "2%",
+      "context": "Of all Iranian highway transactions captured",
+      "company": "Balad Maps"
+    },
+    {
+      "metric": "Driver Acceptance Improvement",
+      "value": "2x",
+      "context": "In-cab UX field research result",
+      "company": "Asanbar"
+    },
+    {
+      "metric": "Monthly Traffic",
+      "value": "1.5PB",
+      "context": "Zero-maintenance architecture",
+      "company": "Zonerift"
+    },
+    {
+      "metric": "Users",
+      "value": "3,000+",
+      "context": "Across Iran, Russia, Eastern Europe",
+      "company": "Zonerift"
+    }
+  ],
+  "tools": [
+    "n8n",
+    "Claude Code",
+    "Figma",
+    "Zed",
+    "Cursor",
+    "OpenRouter",
+    "Docker",
+    "TimescaleDB",
+    "Redis",
+    "Rust",
+    "Jekyll",
+    "Metabase",
+    "DBeaver",
+    "Ghostty",
+    "Linear",
+    "Kafka"
+  ],
+  "philosophy": "I don't design interfaces. I design decisions. Every design decision connects to a business metric. I lead without authority, build with engineers not above them, and believe the best product decisions come from the gap between what users say and what they actually do.",
+  "availability": "Available for senior product leadership roles, consulting engagements, and advisory positions."
+}

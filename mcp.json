@@ -1,0 +1,33 @@
+{
+  "name": "Sajad Roudbari — Product Design & Strategy",
+  "description": "Portfolio of Sajad Roudbari, Head of Product Design & Experience. 15+ years shipping products at scale across e-commerce, mapping, logistics, SaaS, and AI infrastructure.",
+  "version": "1.0.0",
+  "homepage": "https://iamsajaad.github.io",
+  "contact": "sajad.rudbari@gmail.com",
+  "resources": [
+    {
+      "uri": "https://iamsajaad.github.io/profile.json",
+      "name": "profile",
+      "description": "Complete structured profile data: bio, experience, impact metrics, skills, tools, and contact info in Schema.org Person format",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "https://iamsajaad.github.io/llms.txt",
+      "name": "llms-summary",
+      "description": "AI/LLM-optimized text summary of the portfolio for language model ingestion",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "https://iamsajaad.github.io/sitemap.xml",
+      "name": "sitemap",
+      "description": "XML sitemap of all pages",
+      "mimeType": "application/xml"
+    },
+    {
+      "uri": "https://iamsajaad.github.io/",
+      "name": "portfolio",
+      "description": "Full portfolio website with hero, about, impact metrics, experience, superpowers, tools, and contact sections",
+      "mimeType": "text/html"
+    }
+  ]
+}

@@ -30,6 +30,8 @@ plugins:
   - jekyll-seo-tag
 
 permalink: pretty
+include:
+  - .well-known
 exclude:
   - Gemfile
   - Gemfile.lock
