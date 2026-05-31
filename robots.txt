@@ -1,4 +1,4 @@
-# robots.txt for https://iamsajaad.github.io
+# robots.txt for https://iamsajaad.com
 # Sajad Roudbari — Personal Portfolio
 
 # ───────────────────────────────────────────
@@ -11,11 +11,11 @@ Disallow: /_layouts/
 Disallow: /_includes/
 
 # Sitemap & Machine-Readable Data
-Sitemap: https://iamsajaad.github.io/sitemap.xml
+Sitemap: https://iamsajaad.com/sitemap.xml
 
-# WebMCP discovery manifest: https://iamsajaad.github.io/mcp.json
-# LLM-friendly overview:      https://iamsajaad.github.io/llms.txt
-# Structured profile data:    https://iamsajaad.github.io/profile.json
+# WebMCP discovery manifest: https://iamsajaad.com/mcp.json
+# LLM-friendly overview:      https://iamsajaad.com/llms.txt
+# Structured profile data:    https://iamsajaad.com/profile.json
 
 # ───────────────────────────────────────────
 # AI / LLM crawlers — explicitly allowed

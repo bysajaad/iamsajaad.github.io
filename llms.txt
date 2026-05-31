@@ -104,7 +104,7 @@ Available for senior product leadership roles, consulting engagements, and advis
 
 ## Contact & Profiles
 
-- Website: https://iamsajaad.github.io
+- Website: https://iamsajaad.com
 - LinkedIn: https://linkedin.com/in/iamsajaad
 - Telegram: https://t.me/bysajaad
 - Dribbble: https://dribbble.com/bysajaad
@@ -115,10 +115,10 @@ Available for senior product leadership roles, consulting engagements, and advis
 
 ## Machine-Readable Data
 
-- Profile JSON (Schema.org): https://iamsajaad.github.io/profile.json
-- WebMCP Manifest: https://iamsajaad.github.io/mcp.json
-- Sitemap: https://iamsajaad.github.io/sitemap.xml
+- Profile JSON (Schema.org): https://iamsajaad.com/profile.json
+- WebMCP Manifest: https://iamsajaad.com/mcp.json
+- Sitemap: https://iamsajaad.com/sitemap.xml
 
 ## Pages
 
-- [Home / Portfolio](https://iamsajaad.github.io/): Full portfolio with case studies, experience, metrics, tools, and contact
+- [Home / Portfolio](https://iamsajaad.com/): Full portfolio with case studies, experience, metrics, tools, and contact
